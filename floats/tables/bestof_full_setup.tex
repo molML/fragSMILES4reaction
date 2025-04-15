@@ -1,0 +1,15 @@
+\begin{tabular}{l|rrrrrrl}
+\toprule
+model_dim & num_heads & num_layers & batch_size & lr & dropout & notation & task \\
+\midrule
+512 & 4 & 5 & 256 & 0.0001 & 0.3 & fragSMILES & Synthesis \\
+512 & 4 & 5 & 256 & 0.0001 & 0.3 & SAFE & Synthesis \\
+256 & 4 & 3 & 512 & 0.001 & 0.3 & SELFIES & Synthesis \\
+256 & 4 & 4 & 512 & 0.001 & 0.3 & SMILES & Synthesis \\
+\midrule
+512 & 4 & 5 & 256 & 0.0001 & 0.3 & fragSMILES & Retrosynth. \\
+256 & 4 & 4 & 512 & 0.001 & 0.3 & SAFE & Retrosynth. \\
+256 & 4 & 3 & 256 & 0.001 & 0.3 & SELFIES & Retrosynth. \\
+256 & 4 & 4 & 512 & 0.001 & 0.3 & SMILES & Retrosynth. \\
+\bottomrule
+\end{tabular}

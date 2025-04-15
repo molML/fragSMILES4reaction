@@ -1,0 +1,8 @@
+batch_size: 512
+dropout: 0.3
+input_dim: 20349
+lr: 0.0001
+max_len: 150
+model_dim: 512
+num_heads: 4
+num_layers: 5

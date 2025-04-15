@@ -174,15 +174,32 @@ experiments_reactions/*/*/*/*/*.ckpt
 
 ## include only files of bestof setup
 # FORWARD SETUP
-!experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*
-!experiments_reactions/task=forward/notation=safe/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*
-!experiments_reactions/task=forward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=512-lr=0.001-dropout=0.3/*
-!experiments_reactions/task=forward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*
+!experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=forward/notation=safe/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=forward/notation=safe/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=forward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=512-lr=0.001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=forward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=512-lr=0.001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=forward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=forward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*tokens*.csv
 #BACKWARD SETUP
-experiments_reactions/task=backward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*
-experiments_reactions/task=backward/notation=safe/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*
-experiments_reactions/task=backward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=256-lr=0.001-dropout=0.3/*
-experiments_reactions/task=backward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*
+!experiments_reactions/task=backward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=backward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=backward/notation=safe/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=backward/notation=safe/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=backward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=256-lr=0.001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=backward/notation=selfies/model_dim=256-num_heads=4-num_layers=3/batch_size=256-lr=0.001-dropout=0.3/*tokens*.csv
+
+!experiments_reactions/task=backward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*mols*.csv
+!experiments_reactions/task=backward/notation=smiles/model_dim=256-num_heads=4-num_layers=4/batch_size=512-lr=0.001-dropout=0.3/*tokens*.csv
+
+#large file raw data
+rawdata_reactions/*train*.csv
 
 # my business :P
 slurm/
