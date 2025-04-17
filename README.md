@@ -1,4 +1,4 @@
-# fragSMILES4Reactions
+# fragSMILES4Reaction
 
 **fragSMILES4Reactions** is a scientific project focused on the analysis and modeling of chemical reactions using fragment-based SMILES representations and other notations like SMILES, SELFIES and SAFE. This repository contains all the necessary code, data, and scripts to reproduce the experiments and results described in the associated research work.
 
