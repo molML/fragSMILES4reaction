@@ -70,12 +70,10 @@ def predict(args):
 
     model = TransformerModel.load_from_checkpoint(ckpt_path)
 
-    ## [x] do we need temperature ? Not for now
-    model.temperature = args.temperature
     model.k = args.k
 
     trainer = L.Trainer(
-        # fast_dev_run=True,
+        # fast_dev_run=True, # XXX dev try
         accelerator="auto",
         strategy="auto",
         num_nodes=1,

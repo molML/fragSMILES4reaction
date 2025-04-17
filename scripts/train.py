@@ -111,7 +111,7 @@ def train(args):
 
     max_epochs = args.max_epochs
     trainer = L.Trainer(
-        fast_dev_run=True, # XXX Enable here for trying scripts
+        # fast_dev_run=True, # XXX Enable here for trying scripts
         accelerator="auto",
         strategy="auto",
         num_nodes=1,
