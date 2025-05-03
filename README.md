@@ -1,7 +1,7 @@
 # fragSMILES4Reactions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3126/)
 [![Jupyter Notebooks](https://img.shields.io/badge/Made%20with-Jupyter-orange)](https://jupyter.org/)
 
 **fragSMILES4Reactions** is a scientific project focused on the analysis and modeling of chemical reactions using fragment-based SMILES representations and other notations like SMILES, SELFIES and SAFE. This repository contains all the necessary code, data, and scripts to reproduce the experiments and results described in the associated research work.
@@ -51,7 +51,7 @@ However to reproduce our experiments:
     > :warning: These experiments were conducted using 4 GPUs in parallel.
         Running on fewer or lower-memory devices may result in out-of-memory errors.
 
-4. Explore the Jupyter notebooks in notebooks/ (see [Notebooks](#-notebooks) section) to analyze datasets and prediction results.
+4. Explore the Jupyter notebooks in (see [Notebooks](#-notebooks)) section to analyze datasets and prediction results.
 
 ## Model parameters
 
@@ -87,7 +87,7 @@ python scripts/script_file.py --argument1 value1 --argument2 value2
 
 - [`predict.py`](./scripts/predict.py)
   Predict the test set with trained model by using the selected configuration (see dedicated [section](#model-parameters)).
-  The output includes encoded predicted sequences stored in the respective experiment folder, with filenames containing *tokens* substring.
+  The output includes encoded predicted sequences stored in the respective experiment folder, with filenames containing _tokens_ substring.
 
 - [`convert_prediction_strict.py`](./scripts/convert_prediction_strict.py)
   Convert encoded predicted sequences obtained by model specifying its parameters. Invalid decoded sequences include the erroneus chirality label assigned to atoms.

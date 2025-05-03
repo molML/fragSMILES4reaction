@@ -176,6 +176,7 @@ experiments_reactions/*/*/*/*/*.ckpt
 # FORWARD SETUP
 !experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*mols*.csv
 !experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*tokens*.csv
+!experiments_reactions/task=forward/notation=fragsmiles/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*.ckpt
 
 !experiments_reactions/task=forward/notation=safe/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*mols*.csv
 !experiments_reactions/task=forward/notation=safe/model_dim=512-num_heads=4-num_layers=5/batch_size=256-lr=0.0001-dropout=0.3/*tokens*.csv
