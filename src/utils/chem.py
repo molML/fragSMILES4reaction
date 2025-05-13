@@ -22,7 +22,8 @@ def preprocessSmiles(sm):
     return Chem.CanonSmiles(sm)
 
 def isolate_rings(mol):
-    from chemicalgof.decompositer import SINGLEXOCYCLICPATT # to recognize rings
+    from chemicalgof.reduce import Decompositer
+    SINGLEXOCYCLICPATT = Decompositer.SINGLEXOCYCLICPATT # to recognize rings
     bondMatches = mol.GetSubstructMatches( Chem.MolFromSmarts(SINGLEXOCYCLICPATT) )
     bonds=[mol.GetBondBetweenAtoms(*b).GetIdx() for b in bondMatches]
     if not bonds:
