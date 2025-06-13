@@ -130,7 +130,7 @@ class TransformerModel(L.LightningModule):
         loss_epoch = torch.stack([out['loss'] for out in self.training_step_outputs]).mean()
 
         self.log(f"train_loss", loss_epoch, on_step=False, on_epoch=True, prog_bar=False, logger=True)
-   
+
         self.training_step_outputs.clear()
 
         if self.validation_step_outputs:

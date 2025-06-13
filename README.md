@@ -23,8 +23,12 @@
 
 ## 🧪 Reproducibility
 
-The output of the experiments is already included in [`experiments_reactions/`](./experiments_reactions), except for the model checkpoints (`.ckpt` files), which will be made available soon. For this reason prediction (see scripts section) phase can not be executed directly if trained model are not obtained, but analysis about them are already provided in this repository.
-However to reproduce our experiments:
+The output of the experiments is already included in [`experiments_reactions/`](./experiments_reactions), including model checkpoints (`.ckpt` files) adopted for analysis.
+You can train the model yourself, making sure **not to resume from existing checkpoints**.  
+The prediction phase (see the [scripts](#scripts) section) can be executed directly, if the trained models are stored in the appropriate `experiment` folder.
+However, the results of such predictions have already been analyzed and are available in this repository.
+
+To reproduce our experiments:
 
 1. Clone the repository:
 
@@ -42,7 +46,7 @@ However to reproduce our experiments:
     ```
 
 3. Experiments using the best configurations for each model can be run through a shell script.
-   > **_NOTE:_** Set python environment path to be activated in file [`shell/run.sh`](shell/run.sh) line 3.
+   > **_NOTE:_** Set python environment path to be activated in file [`shell/run.sh line 3`](shell/run.sh#L3).
 
     ```bash
     bash shell/run.sh
@@ -51,7 +55,7 @@ However to reproduce our experiments:
     > :warning: These experiments were conducted using 4 GPUs in parallel.
         Running on fewer or lower-memory devices may result in out-of-memory errors.
 
-4. Explore the Jupyter notebooks in (see [Notebooks](#-notebooks)) section to analyze datasets and prediction results.
+4. Explore the Jupyter notebooks in [Notebooks](#-notebooks) section to analyze datasets and prediction results.
 
 ## Model parameters
 
